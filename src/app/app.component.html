@@ -5,9 +5,10 @@
 <hr>
 
 <ol>
-  <li><a [routerLink]="['/']">Home</a></li>
-  <li><a routerLink="/page1">Page1</a></li>
-  <li><a routerLink="/page2">Page2</a></li>
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <a [routerLink]="['/']">Home</a></li>
+  <li routerLinkActive="active"><a routerLink="/page1">Page1</a></li>
+  <li routerLinkActive="active"><a routerLink="/page2">Page2</a></li>
 </ol>
 
 <hr>
