@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'cards/:type',
     component: CardsComponent
+  },
+  {
+    path: 'charts',
+    loadChildren: './charts/charts.module#ChartsModule'
   }
 ];
 
