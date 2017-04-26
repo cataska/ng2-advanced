@@ -48,8 +48,8 @@
                   lorem par.</p>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-flat btn-default">Action 1</button>
-                <button type="button" class="btn btn-flat btn-default">Action 2</button>
+                <button type="button" class="btn btn-flat btn-default" (click)="GoNext(+1)">+1</button>
+                <button type="button" class="btn btn-flat btn-default" [routerLink]="['..', (+this.type)-1]">-1</button>
               </div>
             </div>
           </div>

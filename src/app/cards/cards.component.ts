@@ -24,4 +24,11 @@ export class CardsComponent implements OnInit {
     //this.router.navigateByUrl('charts/flot');
     this.router.navigate(['charts', 'flot']);
   }
+
+  GoNext(num: number) {
+    let next = +this.type + num;
+    this.router.navigate(['..', next], {
+      relativeTo: this.route
+    });
+  }
 }
