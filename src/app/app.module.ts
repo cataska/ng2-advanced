@@ -10,7 +10,6 @@ import { Page2Component } from './page2/page2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
-import { ChartsflotComponent } from './chartsflot/chartsflot.component';
 import { FlotComponent } from './charts/flot/flot.component';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { FlotComponent } from './charts/flot/flot.component';
     DashboardComponent,
     LoginComponent,
     CardsComponent,
-    ChartsflotComponent,
     FlotComponent
   ],
   imports: [

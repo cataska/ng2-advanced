@@ -15,7 +15,7 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'cards',
+    path: 'cards/:type',
     component: CardsComponent
   },
   {
