@@ -12,11 +12,13 @@ export class CardsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   type;
+  num;
 
   ngOnInit() {
     //this.type = this.route.snapshot.params['type'];
     this.route.params.subscribe(x => {
       this.type = x['type'];
+      this.num = x['num'];
     })
   }
 
@@ -28,7 +30,11 @@ export class CardsComponent implements OnInit {
   GoNext(num: number) {
     let next = +this.type + num;
     this.router.navigate(['..', next], {
-      relativeTo: this.route
+      relativeTo: this.route,
+      queryParams: {
+        p1: 100,
+        p2: 200
+      }
     });
   }
 }

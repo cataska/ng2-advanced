@@ -36,7 +36,7 @@
           <div class="col-sm-6 col-xs-12">
             <div class="card">
               <div class="card-heading bg-primary">
-                <div class="card-title">Paracosm</div>
+                <div class="card-title">{{num}}</div>
               </div>
               <div class="card-offset">
                 <div class="card-offset-item text-right">
@@ -49,7 +49,7 @@
               </div>
               <div class="card-footer">
                 <button type="button" class="btn btn-flat btn-default" (click)="GoNext(+1)">+1</button>
-                <button type="button" class="btn btn-flat btn-default" [routerLink]="['..', (+this.type)-1]">-1</button>
+                <button type="button" class="btn btn-flat btn-default" [routerLink]="['..', (+this.type)-1, {num: 500}]">-1</button>
               </div>
             </div>
           </div>
