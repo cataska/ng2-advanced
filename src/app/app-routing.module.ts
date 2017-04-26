@@ -16,8 +16,7 @@ const routes: Routes = [
   {
     path: 'page2',
     component: Page2Component
-  },
-  fallbackRoute
+  }
 ];
 
 @NgModule({
