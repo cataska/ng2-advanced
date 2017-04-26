@@ -1,4 +1,3 @@
-import { FlotComponent } from './charts/flot/flot.component';
 import { CardsComponent } from './cards/cards.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { fallbackRoute } from './shared/fallback-route';
@@ -17,13 +16,6 @@ const routes: Routes = [
   {
     path: 'cards/:type',
     component: CardsComponent
-  },
-  {
-    path: 'charts',
-    children: [
-      { path: '', redirectTo: 'flot', pathMatch: 'full'},
-      { path: 'flot', component: FlotComponent }
-    ]
   }
 ];
 
