@@ -11,7 +11,8 @@ export class ClassicComponent implements OnInit {
 
   ngOnInit() {
     this.data = {
-      name: "cat"
+      name: "cat",
+      sid: 'A123456789'
     };
   }
 

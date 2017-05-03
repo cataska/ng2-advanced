@@ -17,25 +17,29 @@
             <div class="form-group" [class.has-error]="fName.invalid">
               <label class="col-sm-2 control-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control rounded" required
-                       name="name" [ngModel]="data.name" #fName="ngModel">
+                <input type="text" class="form-control rounded" required name="name" [ngModel]="data.name" #fName="ngModel">
               </div>
             </div>
           </fieldset>
 
           <fieldset>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Rounded Corners</label>
+            <div class="form-group" [class.has-error]="fSid.invalid">
+              <label class="col-sm-2 control-label">ID</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control rounded">
-              </div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">With help</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control"><span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <input type="text" class="form-control" name="sid" [ngModel]="data.sid" required minlength="10" maxlength="10" #fSid="ngModel">
+                <span class="help-block">
+                  <pre>
+fSid.value = {{ fSid.value | json }}
+fSid.errors = {{ fSid.errors | json }}
+
+fSid.valid = {{ fSid.valid | json }}
+fSid.invalid = {{ fSid.invalid | json }}
+fSid.dirty = {{ fSid.dirty | json }}
+fSid.pristine = {{ fSid.pristine | json }}
+fSid.touched = {{ fSid.touched | json }}
+fSid.untouched = {{ fSid.untouched | json }}
+                  </pre>
+                </span>
               </div>
             </div>
           </fieldset>
