@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardsComponent } from './cards/cards.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
+import { ClassicComponent } from './forms/classic/classic.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     CardsComponent,
     LayoutComponent,
-    LoginComponent
+    LoginComponent,
+    ClassicComponent
   ],
   imports: [
     BrowserModule,
