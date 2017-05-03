@@ -1,3 +1,4 @@
+import { Classic2Component } from './forms/classic2/classic2.component';
 import { ClassicComponent } from './forms/classic/classic.component';
 import { LoginGuard } from './login.guard';
 import { LayoutComponent } from './layout/layout.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
         loadChildren: './charts/charts.module#ChartsModule',
         canActivate: [LoginGuard]
       },
-      { path: 'forms/classic', component: ClassicComponent }
+      { path: 'forms/classic', component: ClassicComponent },
+      { path: 'forms/classic2', component: Classic2Component }
     ]
   },
   { path: 'login', component: LoginComponent }
