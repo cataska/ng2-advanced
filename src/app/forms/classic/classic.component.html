@@ -12,7 +12,7 @@
     </pre>
     <div class="card">
       <div class="card-body">
-        <form method="post" action="/" class="form-horizontal" #f="ngForm">
+        <form (ngSubmit)="doSubmit(f)" class="form-horizontal" #f="ngForm">
           <fieldset>
             <div class="form-group" [class.has-error]="fName.invalid">
               <label class="col-sm-2 control-label">Name</label>
@@ -43,6 +43,10 @@ fSid.untouched = {{ fSid.untouched | json }}
               </div>
             </div>
           </fieldset>
+
+          <input type="submit" value="submit">
+          <input type="button" value="reset" (click)="doReset(f)">
+
           <fieldset>
             <div class="form-group">
               <label for="input-id-1" class="col-sm-2 control-label">Label focus</label>
