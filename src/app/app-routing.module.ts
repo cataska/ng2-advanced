@@ -1,3 +1,4 @@
+import { LoginGuard } from './login.guard';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
       },
       {
         path: 'charts',
-        loadChildren: './charts/charts.module#ChartsModule'
+        loadChildren: './charts/charts.module#ChartsModule',
+        canActivate: [LoginGuard]
       }
     ]
   },
