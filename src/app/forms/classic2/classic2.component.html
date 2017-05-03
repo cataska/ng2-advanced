@@ -20,6 +20,19 @@
               <div class="col-sm-10">
                 <input type="text" class="form-control rounded"
                        formControlName="name" >
+                <span class="help-block">
+                  <pre>
+form.controls.name.value = {{ form.controls.name.value | json }}
+form.controls.name.errors = {{ form.controls.name.errors | json }}
+
+form.controls.name.valid = {{ form.controls.name.valid | json }}
+form.controls.name.invalid = {{ form.controls.name.invalid | json }}
+form.controls.name.dirty = {{ form.controls.name.dirty | json }}
+form.controls.name.pristine = {{ form.controls.name.pristine | json }}
+form.controls.name.touched = {{ form.controls.name.touched | json }}
+form.controls.name.untouched = {{ form.controls.name.untouched | json }}
+                  </pre>
+                </span>
               </div>
             </div>
           </fieldset>
