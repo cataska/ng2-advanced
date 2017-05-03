@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from "@angular/forms";
+import { ValidateSidFormat } from "app/shared/sid-format-validator";
 
 @Component({
   selector: 'app-classic2',
@@ -26,7 +27,8 @@ export class Classic2Component implements OnInit {
         'A123456789', [
           Validators.required,
           Validators.minLength(10),
-          Validators.maxLength(10)
+          Validators.maxLength(10),
+          ValidateSidFormat
         ]
       ],
       addresses: this.fb.array([
