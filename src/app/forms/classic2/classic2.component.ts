@@ -32,4 +32,11 @@ export class Classic2Component implements OnInit {
     })
   }
 
+  doSubmit() {
+    console.log(this.form.value);
+  }
+
+  doReset() {
+    this.form.reset(this.data);
+  }
 }
